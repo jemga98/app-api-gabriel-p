@@ -74,4 +74,4 @@ Nest is [MIT licensed](LICENSE).
 
 ## ScreenShots
 
-Link acceso carpeta [ScreenShots](https://github.com/jemga98/app-api-gabriel-p/tree/main/screenshots).
+Link acceso carpeta [ScreenShot](https://github.com/jemga98/app-api-gabriel-p/tree/main/screenshots).
