@@ -25,6 +25,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProductosModule } from './productos/productos.module';
 import { PedidosModule } from './pedidos/pedidos.module'
+import { UsersModule } from './users/users.module';
 import config from './ormconfig';
 
 @Module({
@@ -33,6 +34,7 @@ import config from './ormconfig';
     UsuariosModule,
     ProductosModule,
     PedidosModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
