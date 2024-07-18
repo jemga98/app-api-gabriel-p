@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UsersService } from '../users/users.service'; // Asume que tienes un UsersService para interactuar con la base de datos
 import { JwtService } from '@nestjs/jwt';
-import { User } from '../user.entity'; // Asume que tienes una entidad User definida
+import { User } from '../users/user.entity'; // Asume que tienes una entidad User definida
 
 @Injectable()
 export class AuthService {
