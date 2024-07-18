@@ -24,7 +24,7 @@ import { UsuariosModule } from './usuarios/usuarios.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProductosModule } from './productos/productos.module';
-import { PedidosModule } from './pedidos/pedidos.module';
+import { PedidosModule } from './pedidos/pedidos.module'
 import config from './ormconfig';
 
 @Module({
