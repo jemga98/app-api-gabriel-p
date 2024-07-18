@@ -17,13 +17,13 @@ import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
-import { UsersModule } from '../users/users.module';
+import { UsersModule } from '../users/users.module'; // Importa UsersModule
 import { JwtStrategy } from '../strategies/jwt.strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [
-    UsersModule,
+    UsersModule, // Asegúrate de que UsersModule esté importado
     PassportModule,
     JwtModule.registerAsync({
       imports: [ConfigModule],
