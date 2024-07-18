@@ -17,6 +17,6 @@ export class User {
   @Column({ name: 'Rol_Id' })
   roleId: number;
 
-  @Column({ name: 'FechaRegistro' })
+  @Column({ name: 'Fecha_Registro' })
   registrationDate: Date;
 }
