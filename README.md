@@ -75,3 +75,17 @@ Nest is [MIT licensed](LICENSE).
 ## ScreenShots
 
 Link acceso carpeta [ScreenShot](https://github.com/jemga98/app-api-gabriel-p/tree/main/screenshots).
+
+
+
+## Instrucciones del proyecto
+
+En el botón verde [Code] dar click y seleccionar opción [Open with GitHub Desktop] para clonar el repositorio.
+
+- Dato importante: tiene que tener instalado y configurado PostgreSQL para que la conexión sea exitosa.
+
+Después de haberlo clonado abrirlo con visual studio code abrir la terminal y cambiarse a la rama setup-nestjs y ejecutar el comando npm run start.
+
+En caso de que da error al ejecutar el comando npm run start, asegurese de tener instalado TypeORM y PostgreSQL con este comando npm install --save @nestjs/typeorm typeorm pg.
+
+Y luego volver a ejeuctar el comando npm run start y probar las API con postman.
