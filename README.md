@@ -89,3 +89,9 @@ Después de haberlo clonado abrirlo con visual studio code abrir la terminal y c
 En caso de que da error al ejecutar el comando npm run start, asegurese de tener instalado TypeORM y PostgreSQL con este comando npm install --save @nestjs/typeorm typeorm pg.
 
 Y luego volver a ejeuctar el comando npm run start y probar las API con postman.
+
+- En la carpeta src se encuentran las subcarpetas que son referenciadas a los endpoint de las API desarrolladas, las carpetas son las siguiente: pedidos, productos y usuarios.
+
+Para probar cada una de las API tendrias que construir la url de esta manera http://localhost:3000/pedidos
+
+- A excepción de la API de Inicio de sesión porque la url tendrá este endpoint http://localhost:3000/auth/login
