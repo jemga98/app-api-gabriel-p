@@ -11,6 +11,7 @@ import { Controller, Get, Post, Body, Param, Delete, UseGuards } from '@nestjs/c
 import { UsersService } from './users.service';
 import { User } from './user.entity';
 import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { CreateUserDto } from './dto/create-user.dto';
 
 @Controller('Venta.Usuario')
 export class UsersController {
@@ -28,9 +29,14 @@ export class UsersController {
     return this.usersService.findOne(+id);
   }
 
+  // @Post()
+  // create(@Body() user: User): Promise<User> {
+  //   return this.usersService.create(user);
+  // }
+
   @Post()
-  create(@Body() user: User): Promise<User> {
-    return this.usersService.create(user);
+  create(@Body() createUserDto: CreateUserDto): Promise<User> {
+    return this.usersService.create(createUserDto);
   }
 
   @UseGuards(JwtAuthGuard)
