@@ -17,11 +17,11 @@ import { CreateUserDto } from './dto/create-user.dto';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
-  @UseGuards(JwtAuthGuard)
-  @Get()
-  findAll(): Promise<User[]> {
-    return this.usersService.findAll();
-  }
+  // @UseGuards(JwtAuthGuard)
+  // @Get()
+  // findAll(): Promise<User[]> {
+  //   return this.usersService.findAll();
+  // }
 
   @UseGuards(JwtAuthGuard)
   @Get(':id')
@@ -34,14 +34,14 @@ export class UsersController {
   //   return this.usersService.create(user);
   // }
 
-  @Post()
-  create(@Body() createUserDto: CreateUserDto): Promise<User> {
-    return this.usersService.create(createUserDto);
-  }
+  // @Post()
+  // create(@Body() createUserDto: CreateUserDto): Promise<User> {
+  //   return this.usersService.create(createUserDto);
+  // }
 
-  @UseGuards(JwtAuthGuard)
-  @Delete(':id')
-  remove(@Param('id') id: string): Promise<void> {
-    return this.usersService.remove(+id);
-  }
+  // @UseGuards(JwtAuthGuard)
+  // @Delete(':id')
+  // remove(@Param('id') id: string): Promise<void> {
+  //   return this.usersService.remove(+id);
+  // }
 }

@@ -23,9 +23,9 @@ export class UsersService {
     return this.usersRepository.findOne({ where: { username } });
   }
 
-  findAll(): Promise<User[]> {
-    return this.usersRepository.find();
-  }
+  // findAll(): Promise<User[]> {
+  //   return this.usersRepository.find();
+  // }
 
   findOne(id: number): Promise<User> {
     return this.usersRepository.findOneBy({ id });
@@ -47,7 +47,7 @@ export class UsersService {
     return this.usersRepository.save(user);
   }
 
-  async remove(id: number): Promise<void> {
-    await this.usersRepository.delete(id);
-  }
+  // async remove(id: number): Promise<void> {
+  //   await this.usersRepository.delete(id);
+  // }
 }
