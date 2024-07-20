@@ -13,8 +13,8 @@ export class Usuario {
   @Column({ name: 'User' })
   username: string;
 
-  // @Column({ name: 'Clave' })
-  // password: string;
+  @Column({ name: 'Clave' })
+  password: string;
 
   @Column({ name: 'Rol_Id' })
   role: number;
