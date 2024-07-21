@@ -2,8 +2,10 @@
 
 import { Controller, Get, Query, Post, Body, UnauthorizedException } from '@nestjs/common';
 import { AuthService } from './auth.service';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('auth')
+@ApiTags("Inicio de sesion")
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
   

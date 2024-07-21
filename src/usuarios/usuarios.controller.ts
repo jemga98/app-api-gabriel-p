@@ -6,12 +6,15 @@ import { Usuario } from './usuario.entity';
 
 import { CreateUsuarioDto } from './dto/create-usuario.dto';
 import { UpdateUsuarioDto } from './dto/update-usuario.dto';
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 
 @Controller('usuarios')
+@ApiTags("Usuarios")
 export class UsuariosController {
   constructor(private readonly usuariosService: UsuariosService) {}
 
   @Get()
+  @ApiOperation({ description: 'Obtener todos los usuarios' })
   findAll(): Promise<Usuario[]> {
     return this.usuariosService.findAll();
   }

@@ -1,8 +1,10 @@
 import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common';
 import { PedidosService } from './pedidos.service';
 import { Pedido } from './pedido.entity';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('pedidos')
+@ApiTags("Pedidos")
 export class PedidosController {
   constructor(private readonly pedidosService: PedidosService) {}
 
