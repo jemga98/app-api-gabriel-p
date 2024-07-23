@@ -58,7 +58,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+<!-- ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
@@ -70,7 +70,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Nest is [MIT licensed](LICENSE). -->
 
 ## ScreenShots
 
@@ -95,3 +95,10 @@ Y luego volver a ejeuctar el comando npm run start y probar las API con postman.
 Para probar cada una de las API tendrias que construir la url de esta manera http://localhost:3000/pedidos
 
 - A excepción de la API de Inicio de sesión porque la url tendrá este endpoint http://localhost:3000/auth/login
+
+
+# Para probar el API protegida con seguridad de token al iniciar sesión
+
+Para probar el API protegida con seguridad de token al iniciar sesión, se genera un token como se muestra en la imagen, a partir de allí copiar ese token:
+
+![Token de Inicio de Sesión](./screenshot/token_inicio_sesion.png)
