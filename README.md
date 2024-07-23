@@ -101,4 +101,4 @@ Para probar cada una de las API tendrias que construir la url de esta manera htt
 
 Para probar el API protegida con seguridad de token al iniciar sesión, se genera un token como se muestra en la imagen, a partir de allí copiar ese token:
 
-![Token de Inicio de Sesión](./screenshot/token_inicio_sesion.png)
+![Token de Inicio de Sesión](./screenshots/Pruebas_API/token_inicio_sesion.png)
