@@ -105,10 +105,10 @@ Para probar el API protegida con seguridad de token al iniciar sesión, se gener
 
 ## Después de haber copiado el token, dar click en el botón Authorize
 
-[Token Autorizacion](./screenshots/Pruebas_API/autorizacion_by_token_proteccion_seguridad.png)
+![Token Autorizacion](./screenshots/Pruebas_API/autorizacion_by_token_proteccion_seguridad.png)
 
 ## Copiar el token dentro de la caja de texto, como se muestra en imagen y dar click en el botón Authorize
 
-[Token Autorizacion](./screenshots/Pruebas_API/seguridad_bytoken_acceder_endpoint.png)
+![Token Autorizacion](./screenshots/Pruebas_API/seguridad_bytoken_acceder_endpoint.png)
 
 Y listo ahora puede realizar cualquier solicitud a la API
