@@ -112,3 +112,7 @@ Para probar el API protegida con seguridad de token al iniciar sesión, se gener
 ![Token Autorizacion](./screenshots/Pruebas_API/seguridad_bytoken_acceder_endpoint.png)
 
 Y listo ahora puede realizar cualquier solicitud a la API
+
+## A continuación se muestra una solicitud realizada al endpoint usuario en el cual, aparece la autorización del token ingresado previamente
+
+![Solicitud token](./screenshots/Pruebas_API/solicitud_getProducto_validada_bytoken.png)
