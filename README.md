@@ -78,7 +78,7 @@ Link acceso carpeta [ScreenShot](https://github.com/jemga98/app-api-gabriel-p/tr
 
 
 
-## Instrucciones del proyecto
+# Instrucciones del proyecto
 
 En el botón verde [Code] dar click y seleccionar opción [Open with GitHub Desktop] para clonar el repositorio.
 
@@ -97,8 +97,18 @@ Para probar cada una de las API tendrias que construir la url de esta manera htt
 - A excepción de la API de Inicio de sesión porque la url tendrá este endpoint http://localhost:3000/auth/login
 
 
-# Para probar el API protegida con seguridad de token al iniciar sesión
+## Para probar el API protegida con seguridad de token al iniciar sesión
 
 Para probar el API protegida con seguridad de token al iniciar sesión, se genera un token como se muestra en la imagen, a partir de allí copiar ese token:
 
 ![Token de Inicio de Sesión](./screenshots/Pruebas_API/token_inicio_sesion.png)
+
+## Después de haber copiado el token, dar click en el botón Authorize
+
+[Token Autorizacion](./screenshots/Pruebas_API/autorizacion_by_token_proteccion_seguridad.png)
+
+## Copiar el token dentro de la caja de texto, como se muestra en imagen y dar click en el botón Authorize
+
+[Token Autorizacion](./screenshots/Pruebas_API/seguridad_bytoken_acceder_endpoint.png)
+
+Y listo ahora puede realizar cualquier solicitud a la API
