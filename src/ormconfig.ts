@@ -22,11 +22,11 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 const config: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: process.env.DATABASE_HOST || 'rsd-dbboulfire.c94u4wmmikvo.us-east-2.rds.amazonaws.com',       // Cambia a la dirección de tu servidor PostgreSQL
-  port: parseInt(process.env.DATABASE_PORT, 10) || 5432,              // Puerto por defecto de PostgreSQL
+  host: process.env.DATABASE_HOST || 'rsd-dbboulfire.c94u4wmmikvo.us-east-2.rds.amazonaws.com',
+  port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
   username: process.env.DATABASE_USERNAME || 'postgres',  // Reemplaza con tu nombre de usuario de PostgreSQL
-  password: process.env.DATABASE_PASSWORD || 'psgl#12jg&df90', // Reemplaza con tu contraseña de PostgreSQL
-  database: process.env.DATABASE_NAME || 'boulfire', // Reemplaza con el nombre de tu base de datos
+  password: process.env.DATABASE_PASSWORD || 'psgl#12jg&df90',
+  database: process.env.DATABASE_NAME || 'boulfire',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   synchronize: false, // Solo para desarrollo, desactiva en producción
 };
