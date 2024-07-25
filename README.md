@@ -123,7 +123,7 @@ Y listo ahora puede realizar cualquier solicitud a la API
 https://appnestapi.onrender.com/API_DEVOPS
 
 
-### para realizar pruebas a los endpoint de la API desde el link de acceso, el procedimiento es el mismo, a continuación se detallan las credenciales a un usuario para poder realizar el inicio de sesión y generar el token a utilizar para realizar las distintas peticiones en los distintos endpoint, recuerda siempre seguir los pasos descritos en las imágenes que están mas arriba para el correcto funcionamiento de las API, ya que de no seguirlos, el filtro se activara y mostrará el mensaje "no autorizado" con status 401.
+### Para realizar pruebas a los endpoint de la API desde el link de acceso, el procedimiento es el mismo, a continuación se detallan las credenciales a un usuario para poder realizar el inicio de sesión y generar el token a utilizar y realizar las distintas peticiones en los distintos endpoint, recuerda siempre seguir los pasos descritos en las imágenes que están más arriba para el correcto funcionamiento de las API, ya que de no seguirlos, el filtro se activará y mostrará el mensaje "no autorizado" con status 401.
 
 - username: "ali23cr"
 - password: "ali23cr"
