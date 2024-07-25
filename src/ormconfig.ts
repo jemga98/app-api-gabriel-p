@@ -22,13 +22,14 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 const config: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: process.env.DATABASE_HOST || 'localhost',  // Reemplaza con 'localhost' si no estás en Railway
-  port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
-  username: process.env.DATABASE_USERNAME || 'postgres',
-  password: process.env.DATABASE_PASSWORD || '',
-  database: process.env.DATABASE_NAME || 'postgres',
+  host: process.env.DATABASE_HOST,
+  port: parseInt(process.env.DATABASE_PORT, 10),
+  username: process.env.DATABASE_USERNAME,
+  password: process.env.DATABASE_PASSWORD,
+  database: process.env.DATABASE_NAME,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   synchronize: false, // Solo para desarrollo, desactiva en producción
+  ssl: false, // Solo para desarrollo, desactiva en producción
 };
 
 export default config;
