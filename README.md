@@ -116,3 +116,8 @@ Y listo ahora puede realizar cualquier solicitud a la API
 ## A continuación se muestra una solicitud realizada al endpoint usuario en el cual, aparece la autorización del token ingresado previamente
 
 ![Solicitud token](./screenshots/Pruebas_API/solicitud_getProducto_validada_bytoken.png)
+
+
+## El link de acceso a la API en la nube, asegúrate de dar click en la nube
+
+[![GIF](./screenshots/Pruebas_API/storage_cloud.gif)](https://appnestapi.onrender.com/API_DEVOPS)
