@@ -19,17 +19,37 @@
 
 
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import * as dotenv from 'dotenv';
+
+// const config: TypeOrmModuleOptions = {
+//   type: 'postgres',
+//   host: 'boulfire.c94u4wmmikvo.us-east-2.rds.amazonaws.com',
+//   port: 5432,
+//   username: 'postgres',
+//   password: 'psgl#12jg&df90',
+//   database: 'boulfire',
+//   entities: [__dirname + '/**/*.entity{.ts,.js}'],
+//   synchronize: false,
+//   ssl: {
+//     rejectUnauthorized: false, // Cambia a true si deseas validar el certificado SSL del servidor
+//   },
+// };
+
+
+dotenv.config();
 
 const config: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: process.env.DATABASE_HOST,
-  port: parseInt(process.env.DATABASE_PORT, 10),
-  username: process.env.DATABASE_USERNAME,
-  password: process.env.DATABASE_PASSWORD,
-  database: process.env.DATABASE_NAME,
+  host: process.env.DATABASE_HOST || 'localhost',
+  port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
+  username: process.env.DATABASE_USERNAME || 'postgres',
+  password: process.env.DATABASE_PASSWORD || '',
+  database: process.env.DATABASE_NAME || 'postgres',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  synchronize: false, // Solo para desarrollo, desactiva en producción
-  ssl: false, // Solo para desarrollo, desactiva en producción
+  synchronize: false,
+  ssl: {
+    rejectUnauthorized: false, // Cambia a true si deseas validar el certificado SSL del servidor
+  },
 };
 
 export default config;
