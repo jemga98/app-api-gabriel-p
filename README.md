@@ -118,6 +118,6 @@ Y listo ahora puede realizar cualquier solicitud a la API
 ![Solicitud token](./screenshots/Pruebas_API/solicitud_getProducto_validada_bytoken.png)
 
 
-## El link de acceso a la API en la nube
+## Link de acceso a la API en la nube
 
 https://appnestapi.onrender.com/API_DEVOPS
